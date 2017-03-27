@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body {
+  font-family: 'Baloo Bhaina', cursive;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 86px;
+  text-shadow: 1px 1px 8px #333;
+  display: block;
+}
+
+h3 {
+  font-size: 43px;
+  color: #F9F9F9;
+  text-shadow: 1px 1px 8px #333;
+  display: block;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url('../img/main-bg.jpeg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navigation {
+  width: 100%;
+  height: 100px;
+}
+
+.desktop-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.nav-link {
+  font-size: 35px;
+  color: #F9F9F9;
+  text-decoration: none;
+  text-shadow: 1px 1px 8px #999;
+}
+
+.nav-link:hover {
+  color: #FFF;
+  text-shadow: 1px 1px 8px #666;
+}
+
+.typographic-splash {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+  user-select: none;
+}
+
+.down-nav {
+  height: 70px;
+  background: url('../img/down-arrow.svg') center center no-repeat;
+  margin-bottom: 10px;
+  opacity: 50%;
+}
+
+.down-nav:hover {
+  opacity: 100%;
+}
+
+/* Start: Tablet menu items */
+.tablet-nav {
+  width: 100%;
+  height: 100px;
+  display: none;
+}
+
+.social-container {
+  width: 200px;
+  height: 70px;
+  margin-top: 10px;
+  display: none;
+}
+
+.twitter-link {
+  background: url('../img/twitter.svg') center center no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 70px;
+  top: 30px;
+}
+
+.facebook-link {
+  background: url('../img/facebook.svg') center center no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+/* End: Tablet menu items */
+
+/* Begin: Media Query - 01 */
+@media (max-width: 750px) {
+
+/* Nav turns into hamburger menu */
+  .desktop-links { display: none; }
+
+  /* Start: Tablet menu items */
+  .tablet-nav {
+    display: flex;
+    padding-left: 1em;
+  }
+
+  .tab-nav {
+    width: 70px;
+    height: 70px;
+    background: url('../img/nav.svg') center center no-repeat;
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .social-container {
+    display: flex;
+    width: 100%;
+  }
+}
+/* End: Media Query - 01 */
